@@ -1,0 +1,19 @@
+<section class="job-opening__item {{ if include.first ? 'mt--wb' : '' }}">
+  <div class="container container-fluid container--no-gutter--xs">
+    <div class="row row--no-gutter">
+      <div class="col-xs-12 col-md-6 col--no-gutter">
+        <img class="img-responsive job-img-padding" src="{{include.img}}" alt="Developer">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col--no-gutter">
+        <div class="text-container">
+          <h3>{{include.header}}</h3>
+          <p>{{include.text}}</p>
+          <br class="hidden-xs">
+          <div class="button-align-1">
+            <a class="btn btn--secondary btn--outline" href="{{include.url}}" target="_blank" rel="noopener">{{include.urlName}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

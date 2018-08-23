@@ -1,0 +1,16 @@
+{
+  "name": "yc-dev-website",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # Blank Theme - Jekyll An almost empty \"starter theme\" for Jekyll projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ycdev.nl:youngcapital/YoungCapital-international.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

@@ -1,0 +1,54 @@
+{{-- Standardized routes by removing trailing slashes }}
+{% assign page_url = page.url | remove: "/" | prepend: "/" %}
+<footer class="{% if page_url != '/employers' and page_url != '/jobs' %}has-white-block{% endif %}">
+  <div class="container container-fluid container--no-gutter--sm">
+    <div class="footer--inner">
+      <div class="row row--no-gutter">
+        <div class="col-xs-12 col-sm-6 col-md-8 first-sm col--no-gutter">
+          <ul class="social icon-center">
+            <!-- <li>
+              <a href="https://www.youngcapital.nl/vacatures.rss"><i class="nyc-icon nyc-icon-2x nyc-icon-network-rss"></i></a>
+            </li> -->
+            <!-- <li>
+              <a href="https://www.linkedin.com/company/youngcapital"><i class="nyc-icon nyc-icon-2x nyc-icon-network-linkedin"></i></a>
+            </li> -->
+            <li>
+              <a href="https://www.instagram.com/studentjobinternational/"><i class="nyc-icon nyc-icon-2x nyc-icon-network-insta"></i></a>
+            </li>
+            <!-- <li>
+              <a href="https://twitter.com/YoungCapital_NL"><i class="nyc-icon nyc-icon-2x nyc-icon-network-twitter"></i></a>
+            </li> -->
+            <!-- <li>
+              <a href="https://www.youtube.com/c/youngcapital"><i class="nyc-icon nyc-icon-2x nyc-icon-network-youtube"></i></a>
+            </li> -->
+            <li>
+              <a href="https://www.facebook.com/YoungCapitalInternational/"><i class="nyc-icon nyc-icon-2x nyc-icon-network-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 first-xs col--no-gutter">
+          <h3>About YoungCapital</h3>
+          <p>A fresh look at the world. Endless energy. New ideas about work. That is <strong>YoungCapital</strong>. Ambitious, creative, flexible and connected. We are in the starting blocks. Are you ready?</p>
+          <a class="btn btn--outline btn--secondary a-border" href="https://www.youngcapital.nl/werken-in-het-buitenland/" >Visit the website</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <p class="copy">&copy;2018 • KvK nr: 65327853 • <a href="https://www.studentjob.co.uk/info/termsandconditions">Terms and conditions • </a> <a href="https://www.studentjob.co.uk/info/privacy-statement">Privacy Statement• </a><a href="/contact">Contact</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Loading in some scripts here -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="{{site.url}}scripts/carousel.js"></script>
+{% if jekyll.environment == 'production' %}
+  <script src="{{site.url}}scripts/navbar-prod.js"></script>  
+{% else %}
+  <script src="/scripts/navbar.js"></script>
+{% endif %}
+
+
+<!-- <footer class="{% if page_url != '/jobs' %}has-white-block{% endif %}"></footer> -->

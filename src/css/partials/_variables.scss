@@ -1,0 +1,380 @@
+// Media queries from Flexboxgrid
+//  and a custom max-width XS
+$max-width-xs: 47.9375em;
+$min-width-xs: 30em;
+$min-width-sm: 48em;
+$min-width-md: 64em;
+$max-width-md: 63.938em;
+$min-width-lg: 75em;
+
+//------Style by Eddy------//
+
+$default-spacing                      : 40px;
+$default-content-spacing              : $default-spacing * 2;
+
+$nav-height                           : 75px;
+$nav-image                            : 60px;
+
+$line-height-title                    : 1.19;
+$line-height-text                     : 1.6;
+
+$content-line-height-title            : 1.58;
+
+$color-brand                          : #f77f00;
+$color-black                          : #111;
+$color-gray                           : #2d2d2d;
+$color-white                          : #fff;
+$background-color                     : #f9f9f9;
+$mobile-gray-menu                     : #292929;
+
+$white-block-padding                  : $default-spacing;
+$white-block-divider-spacing          : 35px;
+$white-block-divider-border           : solid 1px #e7e7e7;
+
+$white-block-title-color              : $color-black;
+$white-block-title-margin-top         : 0;
+$white-block-title-margin-bottom      : 15px;
+
+$white-block-link-back-color          : $color-black;
+$white-block-link-back-font-size      : 14px;
+$white-block-link-back-font-weight    : 600;
+$white-block-link-back-letter-spacing : -1px;
+
+$white-block-text-color               : $color-black;
+$white-block-text-margin-top          : 15px;
+$white-block-text-margin-bottom       : 0;
+
+$main-flex-text-padding               : $default-spacing;
+$main-flex-text-color                 : $color-white;
+$main-flex-title-color                : $color-white;
+
+$footer-padding-top                   : 48px;
+$footer-title-color                   : $color-black;
+$footer-title-margin-top              : $white-block-title-margin-top;
+$footer-title-margin-bottom           : $white-block-title-margin-bottom;
+
+$footer-text-color                    : $color-black;
+$footer-text-margin-top               : $footer-title-margin-bottom;
+$footer-text-margin-bottom            : 15px;
+
+$copyright-font-size                  : 10px;
+$copyright-margin-top                 : 64px;
+$button-width                         : 308px;
+
+//------mobile variables---------//
+$nav-height-mobile                    : 46px;
+$default-spacing-mobile               : 20px;
+$white-block-padding-mobile           : $default-spacing-mobile;
+$default-content-spacing-mobile       : 0.5 * $default-spacing;
+
+// -------------------- ALLE PADDINGS-BOTTOMS -------------------- //
+
+// .pb-20 {
+//   padding: 0px 0px 20px 0px
+// }
+//
+// .pb-10 {
+//   padding-bottom: 0;
+//
+//   @media screen and (min-width: 64em){
+//     padding-bottom: 10px;
+//   }
+// }
+//
+// .pb-15 {
+//   padding-bottom: 0;
+//
+//   @media screen and (min-width: 64em){
+//     padding-bottom: 15px;
+//   }
+// }
+//
+// .pb-30 {
+//   padding-bottom: 0;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-bottom: 30px;
+//   }
+// }
+//
+// .pb-40 {
+//   padding-bottom: 0;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-bottom: 40px;
+//   }
+// }
+//
+// .pb-80 {
+//   padding-bottom: 0;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-bottom: $default-content-spacing;
+//   }
+// }
+//
+// // -------------------- ALLE PADDINGS GLOBAL -------------------- //
+//
+// .p-10 {
+//   padding: 10px;
+//
+//   @media screen and (min-width: 64em) {
+//     padding: 0;
+//   }
+// }
+//
+// .p-15 {
+//   padding: 0px;
+//
+//   @media screen and (min-width: 64em) {
+//     padding: 15;
+//   }
+// }
+//
+// .p-20 {
+//   padding: 0;
+// }
+//
+// .p-30 {
+// padding: 30px;
+// }
+//
+// .p-40 {
+//   // padding: (0.5 * $default-spacing);
+//   padding: 0;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: $default-spacing;
+//   }
+//
+//   &--black-box {
+//     padding-left: 0;
+//   }
+// }
+//
+// .p-60 {
+//   padding: 0;
+//
+//   @media screen and (min-width: 64em) {
+//   padding: 60px;
+//   }
+// }
+//
+// // -------------------- ALLE PADDING-RIGHTS -------------------- //
+//
+// @media screen and (min-width: 64em) {
+//   .place-right {
+//     float: right;
+//   }
+// }
+//
+// @media screen and (min-width: 48em) {
+//   .pr-10{
+//     padding-right: (0.25 * $default-spacing);
+//   }
+// }
+//
+// @media screen and (min-width: 48em) {
+//   .pr-20{
+//     padding-right: (0.5 * $default-spacing);
+//   }
+// }
+//
+// // -------------------- ALLE PADDING-LEFTS -------------------- //
+//
+// .pl-20 {
+//   padding-left: 20px;
+//
+//   @media screen and (min-width: 48em) {
+//     padding-left: 0;
+//   }
+// }
+//
+// .pl-30 {
+//   padding-left: 0;
+//   }
+//
+//   @media screen and (min-width: 48em) {
+//     .pl-40 {
+//       padding-left: $default-spacing
+//     }
+//   }
+//
+//
+// // -------------------- ALLE PADDING-TOPS -------------------- //
+//
+// .pt-10 {
+//   padding-top: 0;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-top: 10px;
+//   }
+// }
+//
+// .pt-15 {
+//   padding-top: 0px;
+//
+//   @media screen and (min-width: 48em) {
+//     padding-top: 15px;
+//   }
+// }
+//
+// .pt-20 {
+//   padding-top: 0px;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-top: 20px;
+//   }
+//
+// }
+//
+// .pad-m-15 {
+//   padding: 15px;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: 0px;
+//   }
+// }
+//
+// .pad-r-20-bb {
+//   padding: 0px;
+//
+//   @media screen and (min-width: 48em) {
+//     padding-right: 20px;
+//   }
+// }
+//
+// .pad-m-25-bb {
+//   padding: 0px;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: 25px;
+//   }
+// }
+//
+// .pt-45 {
+//   padding-top: 0px;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-top: 45px;
+//   }
+//
+// }
+//
+// .pt-50 {
+//   padding-top: 0;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-top: 50px;
+//   }
+// }
+//
+// .pt-60 {
+//   padding-top: 0;
+//
+//   @media screen and (min-width: 64em) {
+//     padding-top: 60px;
+//   }
+// }
+//
+// // -------------------- ALLE MARGIN-TOPS -------------------- //
+//
+// .mt-80 {
+//   margin-top: 0px;
+//
+//   @media screen and (min-width: 64em){
+//     margin-top: $default-content-spacing;
+//   }
+// }
+//
+// .mt-270 {
+//   margin-top: 0;
+//
+//   @media screen and (min-width: 64em) {
+//     margin-top: 270px;
+//   }
+// }
+//
+// .mt-290 {
+//   margin-top: 290px;
+//   }
+//
+// .mt-255{
+//   // margin-top:
+//   @media screen and (min-width: 64em) {
+//     margin-top: 0;
+//   }
+// }
+//
+// // -------------------- SPECIFIEKE PADDINGS & MARGINGS -------------------- //
+//
+// .mt--15 {
+//   margin-top: 0;
+//
+//   @media screen and (min-width: 48em){
+//     margin-top: -15px;
+//   }
+// }
+//
+// .mt--30 {
+//   margin-top: 0;
+//
+//   @media screen and (min-width: 48em){
+//     margin-top: -30px;
+//   }
+// }
+//
+// .pad-apply-15 {
+//   padding: 15px;
+//
+//   @media screen and (min-width: 48em) and (max-width: 64em) {
+//     padding: 0px 15px 15px 15px;
+//   }
+//
+// }
+//
+// .pad-pre-footer-10 {
+//   padding: 14px;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: 10px;
+//   }
+//
+// }
+//
+// .pad-footer-25 {
+//   padding: 25px;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: 0px;
+//   }
+// }
+//
+// .plr-15 {
+//   padding: 0;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: 0 15px;
+//   }
+// }
+//
+// .plr-20 {
+//   padding: 0;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: 0 20px;
+//   }
+// }
+//
+// .plr-40 {
+//   padding: 0;
+//
+//   @media screen and (min-width: 48em) {
+//     padding: 0 40px;
+//   }
+// }
+//
+// .p20-google {
+//   padding: 20px;
+// }
+//

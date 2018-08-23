@@ -1,0 +1,19 @@
+image: ruby:2.3.1
+
+pages:
+  stage: deploy
+  # Solution found at https://github.com/jekyll/jekyll/issues/4268#issuecomment-357095209
+  before_script:
+  - export LC_ALL="C.UTF-8"
+  - export LANG="en_US.UTF-8"
+  - export LANGUAGE="en_US.UTF-8"
+  script:
+  - gem install bundler
+  - bundle install
+  # - bundle exec jekyll build -d public
+  - JEKYLL_ENV=production bundle exec jekyll build -d public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - pages

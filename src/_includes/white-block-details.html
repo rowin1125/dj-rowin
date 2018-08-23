@@ -1,0 +1,26 @@
+<section class="full-width">
+  <div class="container container-fluid container--no-gutter--xs">
+    <div class="white-block white-block--page-top">
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="text-welcome">
+            <h3 class="h2">{{ page.title }}</h3>
+            <a class="link-detail" href="/jobs">
+              <i class="fas fa-angle-left fa-sm"></i> Back to jobs</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8 white-block--border-left">
+          <div class="plr-20 text-welcome white-text">
+            <p>{{page.intro}}</p>
+            <a class="btn btn-contact btn--primary" onclick="clickNow()">APPLY NOW</a>
+            <script>
+              function clickNow() {
+                $("html, body").animate({ scrollTop: $("#applyNow").offset().top }, 1000);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

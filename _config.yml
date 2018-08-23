@@ -1,0 +1,50 @@
+# Site settings
+title: "YoungCapital International"
+tagline: "YoungCapital International is the international recruitment team of YoungCapital. What do we do? We help boost peoples careers and provide them with the opportunity to work abroad! Everyday we are recruiting new employees for around twenty different companies in countries such as Portugal, Greece and England."
+url: "https://www.youngcapitalinternational.com/" # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+# Social
+socialimg: /img/social.jpg # be sure to change this image
+facebook: fbusername
+twitter: twusername
+github: ghusername
+googleplus: gusername
+instagram: igusername
+
+# Contact
+phone: "916-276-1044" # This is my real number. You should text me.
+email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
+
+# Use this for production
+sass:
+  sass_dir: css
+  #style: compressed
+
+source: "./src"
+destination: "./out"
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+paginate_path: "blog/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Blog settings
+
+# Lang settings
+default_lang: 'en'
+langs:
+  'en': 'English'
+lang_codes:
+  - 'en'

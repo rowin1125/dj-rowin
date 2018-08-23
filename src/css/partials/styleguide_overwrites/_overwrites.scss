@@ -1,0 +1,77 @@
+html, body {
+  font-family: "Work Sans", sans-serif;
+}
+
+
+@media only screen and (min-width: $min-width-sm) {
+  .container {
+    width: 46rem;
+  }
+}
+
+@media only screen and (min-width: $min-width-md) {
+  .container {
+    width: 62rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .container {
+    width: 73rem;
+  }
+}
+
+a.btn {
+  display: inline-block;
+}
+
+
+$containerGutter: .5rem;
+
+.container-fluid {
+  padding-left: $containerGutter;
+  padding-right: $containerGutter;
+}
+
+.container--no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+
+  &--xs {
+    &, .col--no-gutter {
+      @extend .container--no-gutter;
+
+      @media screen and (min-width: $min-width-sm) {
+        padding-left: $containerGutter;
+        padding-right: $containerGutter;
+      }
+    }
+
+    .row--no-gutter {
+      margin-left: 0;
+      margin-right: 0;
+
+      @media screen and (min-width: $min-width-sm) {
+        margin-left: -$containerGutter;
+        margin-right: -$containerGutter;
+      }
+    }
+  }
+
+  &--sm {
+    @extend .container--no-gutter;
+
+    @media screen and (min-width: $min-width-md) {
+      padding-left: $containerGutter;
+      padding-right: $containerGutter;
+    }
+  }
+}
+
+.btn {
+  min-width: 250px;
+  width: 100%;
+  @media screen and (min-width: $min-width-sm) {
+    width: auto;
+  }
+}

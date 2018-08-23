@@ -1,0 +1,79 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    (function randombg() {
+      var random = Math.floor(Math.random() * 12) + 0;
+      var bigSize = [ "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/wa-polen.jpeg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/wa-bulgarije.jpeg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/wa-griekenland.jpeg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/wa-malta.jpeg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/netherlands-header.jpeg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/wa-portugal.jpeg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/picture4.jpg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/picture6.jpg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/picture2.jpg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/picture5.jpg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/picture3.jpg')",
+                      "url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/picture1.jpg')",];
+      document.getElementById("header").style.backgroundImage = bigSize[random];
+      $('#pre-footer').css({
+          'background-size': 'cover'
+        });
+    }());
+  });
+
+</script>
+
+<header id="header" class="header">
+  <div class="header-container">
+    <div class="container container-fluid container--no-gutter">
+      {% if jekyll.environment == 'production' %}
+        <nav>
+          <a class="menu-icon" id="Main_Menu"><i class="nyc-icon nyc-icon-menu-hamburger"></i></a>
+          <div class="logo"><a href="{{site.url}}"><img src="https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/logo-yc.png" width="60"></a></div>
+          <ul class="menu-list header__icon">
+            <li><a href="{{site.url}}">Home</a></li>
+            <li><a href="{{site.url}}jobs" class="nav-item">Jobs</a></li>
+            <li><a href="{{site.url}}employers">Employers</a></li>                          
+            <li><a href="{{site.url}}about-us">About us</a></li>
+            <li><a href="{{site.url}}contact">Contact</a></li>
+          </ul>
+        </nav>
+      {% else %} 
+        <nav>
+            <a class="menu-icon" id="Main_Menu"><i class="nyc-icon nyc-icon-menu-hamburger"></i></a>
+            <div class="logo"><a href="/"><img src="https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/international/yc-img/yc-logo.png" width="60"></a></div>
+            <ul class="menu-list header__icon">
+              <li><a href="/">Home</a></li>
+              <li><a href="/jobs" class="nav-item">Jobs</a></li>
+              <li><a href="/employers">Employers</a></li>                          
+              <li><a href="/about-us">About us</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+          {% endif %}
+    </div>
+  </div>
+  <div class="container container-fluid container--no-gutter">
+    <div class="col-xs-12">
+      <div class="header-img-text">
+          <h1 class="ribbon">
+            <span>IF YOU CAN DREAM IT,</span>
+            <span>YOU CAN DO IT!</span>
+          </h1>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+  {{-- Standardized routes by removing trailing slashes }}
+  {% assign page_url = page.url | remove: "/" | prepend: "/" %}
+  {% if page_url == "/" %}
+    {% include white-block-home.html %}
+  {% elsif (page_url == "/contact") %}
+    {% include white-block-contact.html %}
+  {% elsif (page_url == "/jobs-details") %}
+    {% include white-block-details.html %}
+  {% else %}
+    {% include white-block-other.html %}
+  {% endif %}

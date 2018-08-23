@@ -1,0 +1,111 @@
+@media (max-width: $max-width-xs) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media (min-width: $min-width-sm) {
+  .hidden-sm-up {
+    display: none;
+  }
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+
+  @media screen and (min-width: $min-width-md) {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $max-width-md){
+  .img-responsive {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.flex {
+  &--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.icon-contact-align {
+  min-width: 30px;
+  display: inline-block;
+}
+
+.full-width {
+  @media screen and (min-width: $min-width-sm) and (max-width: $max-width-md) {
+    .container {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin: auto;
+    }
+  }
+}
+
+.job-img-padding {
+  @media screen and (min-width: $min-width-md){
+    padding-right: 25px;
+  }
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.h3 {
+  font-weight: 700;
+}
+
+.mt-0-sm {
+  margin-top: 0;
+  @media screen and (min-width: $min-width-md) {
+    margin-top: 0.625rem;
+  }
+}
+
+@media screen and (min-width: $min-width-md){
+  .ml-text-img {
+    margin-left: 17px;
+  }
+}
+
+@media screen and (min-width: $min-width-md){
+  .mt--aplly{
+    margin-top: -193px;
+  }
+}
+
+@media screen and (min-width: $min-width-md){
+  .mt--wb{
+    margin-top: -80px;
+  }
+}
+@media screen and (min-width: $min-width-md){
+  .pr-10{
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: $min-width-md){
+  .button-align-1 {
+    text-align: right;
+  }
+}
+@media screen and (min-width: $min-width-md){
+  .button-align-2 {
+    text-align: left;
+  }
+}
+
+
