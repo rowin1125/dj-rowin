@@ -29,5 +29,3 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#Style-guide
-# gem 'yc-style-guide', git: 'git@gitlab.ycdev.nl:youngcapital/yc-style-guide.git', branch: 'master'

@@ -6,12 +6,12 @@ header {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 3.15rem;
-    width: 440px;
+    width: 330px;
     line-height: 0.95;
   }
   .header-container {
     width: 100%;
-    background-color: $color-white;
+    background-color: $color-black;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -25,7 +25,7 @@ header {
       top: 100px;
       span {
         background-color: #111111;
-        color: #fff;
+        color: $color-brand;
         font-size: 2rem;
         padding: .4rem .8rem;
       }
@@ -140,7 +140,7 @@ header {
           padding-right: 5px;
           padding-bottom: 3px;
           @media screen and (min-width: $min-width-sm) {
-            color: $color-black;
+            color: $color-white;
           }
           &:hover {
             color: $color-brand;
@@ -167,13 +167,13 @@ header {
 }
 
 header {
-  background: url('https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/wa-bulgarije.jpeg');
+  background: url("https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/dev-website/projects-details/issues/6.jpg");
   height: 330px;
   background-size: cover;
   @media screen and (min-width: $min-width-md) {
     background-size: cover;
     height: 450px;
-    background-position: 50% 20%;
+    background-position: 50% 80%;
   }
 }
 

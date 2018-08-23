@@ -2,12 +2,12 @@ footer {
   position: relative;
   background: $color-black;
   background-size: cover;
-  color: #d4d4d4;
+  color: $color-brand;
   z-index: 0;
   padding: 120px $default-spacing-mobile $default-spacing-mobile $default-spacing-mobile;
 
   h1, h2, h3, h4, p {
-    color: $color-white;
+    color: $color-brand;
   }
 
   .a-border:hover {
