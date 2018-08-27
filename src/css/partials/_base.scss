@@ -137,6 +137,9 @@ p {
   @extend .job-opening__item ;
   background-color: #fff;
   color: black;
+  @media screen and (max-width: 768px){
+    padding-top: 10px;
+  }
   img{
     @media screen and (min-width: $min-width-md) {
       float: right;
@@ -437,6 +440,7 @@ p {
     }
   }
 }
+
 
 .gray-box {
   background-color: #2d2d2d;
@@ -774,4 +778,27 @@ p {
 
 .country_Default {
   display:none;
+}
+
+.btn--primary {
+  background-color: $color-brand !important;
+}
+.btn--primary:hover {
+  color: $color-brand !important;
+  background-color: white !important;
+  border: 1px solid $color-brand !important;
+}
+
+.btn--outline.btn--secondary {
+  color: white !important;
+}
+
+.btn--outline {
+  background-color: $color-brand !important;  
+  border: none !important;
+}
+.btn--outline:hover {
+  color: $color-brand !important;
+  background-color: white !important;
+  border: 1px solid $color-brand !important;
 }
