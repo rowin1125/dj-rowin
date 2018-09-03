@@ -19,7 +19,10 @@ body {
   }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   // text-transform: uppercase;
   // font-weight: 900;
   color: $color-brand;
@@ -37,12 +40,11 @@ p {
   line-height: $line-height-text;
 }
 
-
 .job-opening__item {
   // padding-top: $default-spacing-mobile;
   // border-bottom: 1px solid #535353;
   color: $color-brand;
-  
+
   iframe {
     padding-right: 22px;
   }
@@ -53,7 +55,7 @@ p {
 
   @media (min-width: $min-width-sm) {
     padding-bottom: $default-spacing;
-    padding-top: $default-spacing ;
+    padding-top: $default-spacing;
   }
 
   @media (min-width: $min-width-md) {
@@ -74,14 +76,14 @@ p {
     font-size: 14px;
     color: $color-black;
   }
-  
-  .img-responsive{
+
+  .img-responsive {
     display: block;
     position: relative;
     margin: 0 auto;
-    @media screen and (min-width: $min-width-sm){
-        margin: 0 auto;
-      }
+    @media screen and (min-width: $min-width-sm) {
+      margin: 0 auto;
+    }
   }
 
   .container {
@@ -93,7 +95,6 @@ p {
     @media screen and (min-width: $min-width-md) {
       margin-bottom: 0px;
       padding-top: 80px;
-      
     }
     @media screen and (min-width: $min-width-md) {
       &.black-down {
@@ -103,7 +104,6 @@ p {
     }
 
     .text-container {
-
       padding: $default-spacing-mobile;
 
       @media screen and (min-width: $min-width-sm) {
@@ -117,9 +117,11 @@ p {
         padding-bottom: 0;
       }
 
-      h1, h2, h3 {
-        margin-top:0;
-        color: $color-brand;;
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+        color: $color-brand;
 
         @media screen and (min-width: $min-width-sm) {
           margin-top: $default-spacing-mobile;
@@ -134,13 +136,13 @@ p {
 }
 
 .job-opening__item-reversed {
-  @extend .job-opening__item ;
+  @extend .job-opening__item;
   background-color: #fff;
   color: black;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     padding-top: 10px;
   }
-  img{
+  img {
     @media screen and (min-width: $min-width-md) {
       float: right;
       margin: 0;
@@ -149,7 +151,7 @@ p {
 }
 
 .flex-layout {
-  @extend .job-opening__item ;
+  @extend .job-opening__item;
   border-bottom: none;
   background-color: #111;
 
@@ -174,7 +176,6 @@ p {
 
     @media screen and (min-width: $min-width-md) {
       padding: 0;
-
     }
   }
 
@@ -207,7 +208,7 @@ p {
 
 .white-block {
   background-color: #ffffffc9;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
   color: $color-brand;
   padding: $white-block-padding-mobile;
   position: relative;
@@ -215,10 +216,16 @@ p {
   margin: -200px 20px 20px 20px;
 
   @media screen and (min-width: $min-width-sm) {
+    padding: ($default-spacing * 0.6666);
+  }
+  @media screen and (min-width: $min-width-md) {
     padding: $default-spacing;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: $color-brand;
     margin-top: $white-block-title-margin-top;
     margin-bottom: $white-block-title-margin-bottom;
@@ -234,7 +241,6 @@ p {
   }
 
   @media screen and (min-width: $min-width-md) {
-
     .btn {
       width: $button-width;
     }
@@ -246,21 +252,20 @@ p {
   }
 
   &--border-left {
-
     @media screen and (min-width: $min-width-md) {
       padding-left: $white-block-divider-spacing;
       border-left: $white-block-divider-border;
 
-      .new-colleagues-container a{
+      .new-colleagues-container a {
         width: 100%;
       }
     }
-
   }
 
   &--apply {
     @media screen and (min-width: $min-width-sm) {
-      &, & .white-block {
+      &,
+      & .white-block {
         margin-top: 0;
       }
     }
@@ -283,7 +288,13 @@ p {
       margin-top: $white-block-text-margin-bottom;
       margin-bottom: $white-block-text-margin-bottom;
     }
-
+    .img-container {
+      display: none;
+      @media screen and (min-width: $min-width-md) {
+        display: block;
+        margin: -40px -40px -40px -20px;
+      }
+    }
   }
   &--contact {
     @media screen and (min-width: $min-width-md) {
@@ -295,11 +306,11 @@ p {
   &--apply {
     font-family: "Work Sans";
     form {
-      input, textarea {
+      input,
+      textarea {
         width: 100%;
         border: solid 0.8px #c3c3c3;
         padding: 10px 15px;
-
       }
       @media screen and (min-width: $min-width-sm) {
         a {
@@ -308,35 +319,33 @@ p {
         }
       }
 
-      
-
       input {
-        margin-bottom:10px;
+        margin-bottom: 10px;
       }
     }
     .contact-info {
       i {
         margin-right: 2px;
       }
-      a{
+      a {
         text-decoration: none;
         color: $color-black;
       }
 
       .mail {
         a {
-          @media screen and (max-width: 398px){
+          @media screen and (max-width: 398px) {
             font-size: 11px;
           }
         }
       }
-      .address{
-        display:flex;
-      }
-      .phone{
+      .address {
         display: flex;
       }
-      .social{
+      .phone {
+        display: flex;
+      }
+      .social {
         display: block;
         position: relative;
         text-align: left;
@@ -352,7 +361,7 @@ p {
         li {
           display: inline-block;
           a {
-            color: $color-black;
+            color: $color-brand;
           }
         }
       }
@@ -391,16 +400,16 @@ p {
     z-index: 10;
     top: 60px;
 
-    @media screen and (min-width: 375px){
+    @media screen and (min-width: 375px) {
       top: 210px;
     }
-    @media screen and (min-width: 440px){
+    @media screen and (min-width: 440px) {
       top: 220px;
     }
-    @media screen and (min-width: 638px){
+    @media screen and (min-width: 638px) {
       top: 240px;
     }
-    @media screen and (min-width: 868px){
+    @media screen and (min-width: 868px) {
       top: 270px;
     }
 
@@ -411,7 +420,7 @@ p {
     p {
       margin-top: 0;
     }
-    h2{
+    h2 {
       font-weight: 900;
     }
 
@@ -441,6 +450,13 @@ p {
   }
 }
 
+.sc-iframe {
+  width: 100%;
+  padding: 10px 0!important;
+  @media screen and (min-width: $min-width-md){
+    width: 70%!important;
+  }
+}
 
 .gray-box {
   background-color: #2d2d2d;
@@ -455,7 +471,7 @@ p {
   @media screen and (min-width: $min-width-md) {
     padding: $default-content-spacing 0;
   }
-  
+
   ul {
     list-style: none;
     margin: 0;
@@ -485,7 +501,7 @@ p {
         color: white;
         margin: 0;
       }
-      p{
+      p {
         color: white;
       }
     }
@@ -519,7 +535,6 @@ p {
     margin-top: $default-spacing-mobile;
     margin-bottom: $default-spacing-mobile;
 
-
     @media screen and (min-width: $min-width-sm) {
       margin-top: $default-spacing;
       margin-bottom: $default-spacing;
@@ -529,7 +544,7 @@ p {
       padding-left: inherit;
       padding-right: inherit;
       padding-top: 0;
-      margin-bottom: (1.5 * $default-content-spacing );
+      margin-bottom: (1.5 * $default-content-spacing);
       margin-top: 0;
     }
 
@@ -578,15 +593,15 @@ p {
 
         @media screen and (min-width: $min-width-md) {
           padding-left: 0;
-          padding-right: 0
+          padding-right: 0;
         }
       }
 
       .row-projects-overview {
-        @media screen and (min-width: $min-width-sm){
+        @media screen and (min-width: $min-width-sm) {
           align-items: center;
         }
-        @media screen and (min-width: $min-width-md){
+        @media screen and (min-width: $min-width-md) {
           align-items: unset;
         }
       }
@@ -619,7 +634,6 @@ p {
       }
 
       &--reversed {
-
         .img-container {
           padding-left: 12px;
           padding-right: 8px;
@@ -718,7 +732,9 @@ p {
     margin: 0;
   }
 
-  h1, h2, h3{
+  h1,
+  h2,
+  h3 {
     color: $color-brand;
   }
 
@@ -751,11 +767,11 @@ p {
 .main-text {
   // margin: 10px auto;
 
-  @media screen and (min-width: $min-width-sm){
+  @media screen and (min-width: $min-width-sm) {
     margin: 40px 0;
   }
 
-  @media screen and (min-width: $min-width-md){
+  @media screen and (min-width: $min-width-md) {
     margin: -40px auto 80px;
   }
 
@@ -771,13 +787,15 @@ p {
 }
 
 .country_ {
-  &NL, &DE, &Default {
-    display:none;
+  &NL,
+  &DE,
+  &Default {
+    display: none;
   }
 }
 
 .country_Default {
-  display:none;
+  display: none;
 }
 
 .btn--primary {
@@ -794,7 +812,7 @@ p {
 }
 
 .btn--outline {
-  background-color: $color-brand !important;  
+  background-color: $color-brand !important;
   border: none !important;
 }
 .btn--outline:hover {

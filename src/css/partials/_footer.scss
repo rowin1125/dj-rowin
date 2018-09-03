@@ -4,7 +4,11 @@ footer {
   background-size: cover;
   color: $color-brand;
   z-index: 0;
-  padding: 120px $default-spacing-mobile $default-spacing-mobile $default-spacing-mobile;
+  padding: 100px $default-spacing-mobile $default-spacing-mobile $default-spacing-mobile;
+  @media screen and (min-width: $min-width-md){
+  padding: 20px $default-spacing-mobile $default-spacing-mobile $default-spacing-mobile;
+
+  }
 
   h1, h2, h3, h4, p {
     color: $color-brand;
@@ -15,8 +19,8 @@ footer {
   }
 
   @media screen and (min-width: $min-width-md) {
-    
-    padding-top: 80px;
+
+    // padding-top: 80px;
     &.has-white-block .container {
       padding-top: 93px;
     }
@@ -28,7 +32,7 @@ footer {
       text-align: center;
       margin-top: $default-spacing-mobile;
 
-      @media screen and (min-width: $min-width-sm) {
+      @media screen and (min-width: $min-width-md) {
         text-align: left;
         margin-top: 5px;
       }
@@ -59,8 +63,12 @@ footer {
 
       @media screen and (min-width: $min-width-sm) {
         a {
-          margin-bottom: 0;
           width: 100%;
+        }
+      }
+      @media screen and (min-width: $min-width-md) {
+        a {
+          margin-bottom: 0;
         }
       }
     }
@@ -69,6 +77,7 @@ footer {
     font-size: 10px;
     margin-top: $default-spacing-mobile;
     margin-bottom: 0;
+    color: white;
 
     @media screen and (min-width: $min-width-sm) {
       margin-top: $default-spacing;

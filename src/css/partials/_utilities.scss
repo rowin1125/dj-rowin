@@ -41,6 +41,9 @@
 .icon-contact-align {
   min-width: 30px;
   display: inline-block;
+  &__color {
+    color: black;
+  }
 }
 
 .full-width {

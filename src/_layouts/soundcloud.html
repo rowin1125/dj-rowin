@@ -1,0 +1,37 @@
+---
+title: "Test"
+---
+<!DOCTYPE html>
+
+<html class="no-js">
+
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  <!-- 1 -->
+  <section class="soundcloud">
+    {% include soundcloud.html first=true scUrl="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/470610822&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"%}
+    <!-- 2 -->
+    {% include soundcloud.html scUrl="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/443146071&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"%}
+    <!-- 3 -->
+    {% include soundcloud.html scUrl="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422767230&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"%}
+
+  {% include gray-block-question.html %} {% include footer.html %}
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal({
+      reset: true
+    });
+    sr.reveal('.job-opening__item', {
+      duration: 1000
+    });
+    sr.reveal('.job-opening__item-reversed', {
+      duration: 1000
+    });
+  </script>
+
+</body>
+
+</html>

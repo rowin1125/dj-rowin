@@ -1,10 +1,10 @@
 {{-- Standardized routes by removing trailing slashes }}
 {% assign page_url = page.url | remove: "/" | prepend: "/" %}
-<footer class="{% if page_url != '/soundcloud' and page_url != '/jobs' %}has-white-block{% endif %}">
+<footer class="{% if page_url != '/soundcloud' and page_url != '/ervaringen' %}has-white-block{% endif %}">
   <div class="container container-fluid container--no-gutter--sm">
     <div class="footer--inner">
       <div class="row row--no-gutter">
-        <div class="col-xs-12 col-sm-6 col-md-8 first-sm col--no-gutter">
+        <div class="col-xs-12 col-md-8 first-md col--no-gutter">
           <ul class="social icon-center">
             <!-- <li>
               <a href="https://www.youngcapital.nl/vacatures.rss"><i class="nyc-icon nyc-icon-2x nyc-icon-network-rss"></i></a>
@@ -26,7 +26,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 first-xs col--no-gutter">
+        <div class="col-xs-12 col-md-4 first-xs first-sm col--no-gutter">
           <h3>About Dj - Rowin</h3>
           <p>Give me content</p>
           <a class="btn btn--outline btn--secondary a-border" href="https://www.youngcapital.nl/werken-in-het-buitenland/" target="_blank">Visit the website</a>
