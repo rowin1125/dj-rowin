@@ -5,19 +5,11 @@
         <div class="col-xs-12 col-md-4">
           <div class="text-welcome">
             <h3 class="h2">{{ page.title }}</h3>
-            <a class="link-detail" href="/jobs">
-              <i class="fas fa-angle-left fa-sm"></i> Back to jobs</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-8 white-block--border-left">
           <div class="plr-20 text-welcome white-text">
-            <p>{{page.intro}}</p>
-            <a class="btn btn-contact btn--primary" onclick="clickNow()">APPLY NOW</a>
-            <script>
-              function clickNow() {
-                $("html, body").animate({ scrollTop: $("#applyNow").offset().top }, 1000);
-              }
-            </script>
+            <h3 class="">{{page.intro}}</h3>
           </div>
         </div>
       </div>

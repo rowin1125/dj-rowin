@@ -13,7 +13,7 @@
 
     .image-layout-xs {
       position: relative;
-      padding: $default-spacing-mobile;
+      padding: $default-spacing-mobile 0;
 
       .center-xs:first-child img {
         padding-top: 0;

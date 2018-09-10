@@ -29,19 +29,19 @@
           <ul class="menu-list header__icon">
             <li><a href="{{site.url}}">Home</a></li>
             <li><a href="{{site.url}}ervaringen" class="nav-item">Ervaringen</a></li>
-            <li><a href="{{site.url}}soundcloud">Soundcloud</a></li>                          
+            <li><a href="{{site.url}}soundcloud">Soundcloud</a></li>
             <li><a href="{{site.url}}about-us">DJ Rowin</a></li>
             <li><a href="{{site.url}}contact">Contact & Prijzen</a></li>
           </ul>
         </nav>
-      {% else %} 
+      {% else %}
         <nav>
             <a class="menu-icon" id="Main_Menu"><i class="nyc-icon nyc-icon-menu-hamburger"></i></a>
             <div class="logo"><a href="/"><img src="https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/dev-website/projects-details/dj-rowin.png" width="60"></a></div>
             <ul class="menu-list header__icon">
               <li><a href="/">Home</a></li>
               <li><a href="/ervaringen" class="nav-item">Ervaringen</a></li>
-              <li><a href="/soundcloud">Soundcloud</a></li>                          
+              <li><a href="/soundcloud">Soundcloud</a></li>
               <li><a href="/about-us">DJ Rowin</a></li>
               <li><a href="/contact">Contact & Prijzen</a></li>
             </ul>
@@ -68,7 +68,7 @@
     {% include white-block-home.html %}
   {% elsif (page_url == "/contact") %}
     {% include white-block-contact.html %}
-  {% elsif (page_url == "/jobs-details") %}
+  {% elsif (page_url == "/about-us") %}
     {% include white-block-details.html %}
   {% else %}
     {% include white-block-other.html %}
