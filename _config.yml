@@ -7,13 +7,13 @@ url: "htpps://djrowin.nl" # The base hostname & protocol for your site. Use it i
 socialimg: /img/social.jpg # be sure to change this image
 facebook: fbusername
 twitter: twusername
-github: ghusername
+github: rowin1125
 googleplus: gusername
 instagram: igusername
 
 # Contact
-phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
+phone: "0642655790"
+email: "info@djrowin.nl"
 
 # Use this for production
 sass:
