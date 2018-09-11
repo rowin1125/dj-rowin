@@ -17,7 +17,7 @@ email: "info@djrowin.nl"
 
 # Use this for production
 sass:
-  sass_dir: app
+  sass_dir: _sass
   style: compressed
 
 source: "./src"
