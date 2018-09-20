@@ -1,14 +1,13 @@
 {
   "name": "dj-rowin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Build in jekyll",
   "main": "index.html",
-  "homepage": "https://rowin1125.github.io/dj-rowin",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
+    "type": "https://github.com/rowin1125/dj-rowin",
     "url": ""
   },
   "author": "Rowin mol",
