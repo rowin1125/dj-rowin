@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
+  "homepage": "https://rowin1125.github.io/dj-rowin",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
