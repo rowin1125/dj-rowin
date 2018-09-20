@@ -1,6 +1,6 @@
 image: ruby:2.3.1
 
-pages:
+master:
   stage: deploy
   # Solution found at https://github.com/jekyll/jekyll/issues/4268#issuecomment-357095209
   before_script:
@@ -16,4 +16,4 @@ pages:
     paths:
     - public
   only:
-  - pages
+  - master
