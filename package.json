@@ -4,7 +4,8 @@
   "description": "Build in jekyll",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "jekyll build && rm -rf docs && mv out docs && git add . && git commit -m 'Deploy' && git push"
   },
   "repository": {
     "type": "https://github.com/rowin1125/dj-rowin",
