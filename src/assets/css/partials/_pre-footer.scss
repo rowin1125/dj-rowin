@@ -1,0 +1,57 @@
+.pre-footer {
+  position: relative;
+  background-size: cover;
+  height: 430px;
+  background: url("https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/dev-website/projects-details/issues/6.jpg");
+  
+  @media (min-width: $min-width-md) {
+    height: 380px;
+    background-position: 50% 50%;
+  }
+  &-apply {
+    background: url(https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/youngcapital/international/werken-in-het-buitenland/wa-portugal.jpeg);
+    background-size: cover;
+    height: 457px;
+    
+    @media screen and (max-width: 64em){ // TODO: Min or max?
+      height: auto;
+    }
+    @media screen and (max-width: 48em){ // TODO: Min or max?
+      background: none;
+    }
+  }
+}
+
+.footer-li {
+  h2{
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+    // padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      position: relative;
+      padding-left: 15px;
+      
+      &:before {
+        content: "■";
+        color: $color-brand;
+        position: absolute;
+        margin-left: -15px;
+
+        @media screen and (min-width: 430px) {
+          font-size: 20px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  p {
+    margin: 0;
+    @media (min-width: $min-width-sm) {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+$max-width-xs: 47.9375em;
+$min-width-xs: 30em;
+$min-width-sm: 48em;
+$min-width-md: 64em;
+$max-width-md: 63.938em;
+$min-width-lg: 75em;
+
+$default-spacing                      : 40px;
+$default-content-spacing              : $default-spacing * 2;
+
+$nav-height                           : 75px;
+$nav-image                            : 60px;
+
+$line-height-title                    : 1.19;
+$line-height-text                     : 1.6;
+
+$content-line-height-title            : 1.58;
+
+$color-brand                          : #2e8bb9;
+$color-black                          : #111;
+$color-gray                           : #2d2d2d;
+$color-white                          : #fff;
+$background-color                     : #111;
+$mobile-gray-menu                     : #292929;
+
+$white-block-padding                  : $default-spacing;
+$white-block-divider-spacing          : 35px;
+$white-block-divider-border           : solid 1px #e7e7e7;
+
+$white-block-title-color              : $color-black;
+$white-block-title-margin-top         : 0;
+$white-block-title-margin-bottom      : 15px;
+
+$white-block-link-back-color          : $color-black;
+$white-block-link-back-font-size      : 14px;
+$white-block-link-back-font-weight    : 600;
+$white-block-link-back-letter-spacing : -1px;
+
+$white-block-text-color               : $color-black;
+$white-block-text-margin-top          : 15px;
+$white-block-text-margin-bottom       : 0;
+
+$main-flex-text-padding               : $default-spacing;
+$main-flex-text-color                 : $color-white;
+$main-flex-title-color                : $color-white;
+
+$footer-padding-top                   : 48px;
+$footer-title-color                   : $color-black;
+$footer-title-margin-top              : $white-block-title-margin-top;
+$footer-title-margin-bottom           : $white-block-title-margin-bottom;
+
+$footer-text-color                    : $color-black;
+$footer-text-margin-top               : $footer-title-margin-bottom;
+$footer-text-margin-bottom            : 15px;
+
+$copyright-font-size                  : 10px;
+$copyright-margin-top                 : 64px;
+$button-width                         : 308px;
+
+$nav-height-mobile                    : 46px;
+$default-spacing-mobile               : 20px;
+$white-block-padding-mobile           : $default-spacing-mobile;
+$default-content-spacing-mobile       : 0.5 * $default-spacing;

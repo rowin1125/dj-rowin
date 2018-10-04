@@ -21,7 +21,7 @@ sass:
   style: compressed
 
 source: "./src"
-destination: "./out"
+destination: "./docs"
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 

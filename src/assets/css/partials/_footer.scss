@@ -1,0 +1,102 @@
+footer {
+  position: relative;
+  background: $color-black;
+  background-size: cover;
+  color: $color-brand;
+  z-index: 0;
+  padding: 100px $default-spacing-mobile $default-spacing-mobile $default-spacing-mobile;
+  @media screen and (min-width: $min-width-md){
+  padding: 20px $default-spacing-mobile $default-spacing-mobile $default-spacing-mobile;
+
+  }
+
+  h1, h2, h3, h4, p {
+    color: $color-brand;
+  }
+
+  .a-border:hover {
+    border: 1px solid white;
+  }
+
+  @media screen and (min-width: $min-width-md) {
+
+    // padding-top: 80px;
+    &.has-white-block .container {
+      padding-top: 93px;
+    }
+  }
+
+  .container {
+    .social {
+      display: block;
+      text-align: center;
+      margin-top: $default-spacing-mobile;
+
+      @media screen and (min-width: $min-width-md) {
+        text-align: left;
+        margin-top: 5px;
+      }
+
+      li {
+        padding: 0 2px 0 0;
+        display: inline-block;
+
+        a {
+          color: $color-white;
+        }
+        i {
+          color: $color-brand;
+        }
+
+        i::before {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .row {
+      h3 {
+        margin-top: $footer-title-margin-top;
+      }
+
+      a {
+        margin: 20px 0;
+        color: $color-brand;
+      }
+
+      @media screen and (min-width: $min-width-sm) {
+        a {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: $min-width-md) {
+        a {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .copy{
+    font-size: 10px;
+    margin-top: $default-spacing-mobile;
+    margin-bottom: 0;
+    color: $color-brand;
+
+    @media screen and (min-width: $min-width-sm) {
+      margin-top: $default-spacing;
+    }
+
+    @media screen and (min-width: $min-width-md) {
+      margin-top: $default-content-spacing;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-brand;
+    }
+  }
+}
+
+@media screen and (min-width: $min-width-md) {
+    padding-top: 180px;
+  }
