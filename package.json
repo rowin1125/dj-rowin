@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "jekyll build && rm -rf docs && mv out docs && git add . && git commit -m 'Deploy' && git push"
+    "deploy": "jekyll build && rm -rf docs && mv out docs && touch docs/CNAME && echo 'https://djrowin.nl' > docs/CNAME && git add . && git commit -m 'Deploy' && git push"
   },
   "repository": {
     "type": "https://github.com/rowin1125/dj-rowin",
