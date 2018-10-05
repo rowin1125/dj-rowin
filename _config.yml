@@ -2,6 +2,7 @@
 title: "DJ-Rowin"
 tagline: "DJ-Rowin!!"
 url: "https://djrowin.nl" # The base hostname & protocol for your site. Use it if you need absolute URL's
+description: "DJ Rowin, voor alle feesten in Purmerend, Amsterdam en omstreken"
 
 # Social
 socialimg: /img/social.jpg # be sure to change this image
@@ -36,6 +37,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
