@@ -5,12 +5,11 @@ url: "https://djrowin.nl" # The base hostname & protocol for your site. Use it i
 description: "DJ Rowin, voor alle feesten in Purmerend, Amsterdam en omstreken"
 
 # Social
-socialimg: /img/social.jpg # be sure to change this image
-facebook: fbusername
-twitter: twusername
+socialimg: /images/dj-r.jpg # be sure to change this image
+facebook: rowin.mol
+twitter: rowin648
 github: rowin1125
-googleplus: gusername
-instagram: igusername
+instagram: rowin648
 
 # Contact
 phone: "0642655790"
