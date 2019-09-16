@@ -1,55 +1,57 @@
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Plain Description -->
-	<title>{% if page.description %}{{page.description }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="description" content="{{page.meta}}">
-	<link rel="icon" type="image/png" href="https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/dev-website/projects-details/dj-rowin.png">
-	<meta name="google-site-verification" content="dFm7Smrk04E8NMXsh0bFnUZVgEPCDjNi_kG6rhap1iw" />
-	<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html',''}}">
+  <!-- Plain Description -->
+  <title>{% if page.description %}{{ page.description }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.meta }}" />
+  <link rel="icon" type="image/png" href="https://youngcapital-uploads-production.s3.amazonaws.com/nl/public/Image/dev-website/projects-details/dj-rowin.png" />
+  <meta name="google-site-verification" content="dFm7Smrk04E8NMXsh0bFnUZVgEPCDjNi_kG6rhap1iw" />
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html',''}}" />
 
-	<!-- Google++ -->
-	<link rel="publisher" href="https://plus.google.com/{{site.googleplus}}" />
-	<!-- <meta itemprop="name" content="{{ site.title }}"> -->
-	<meta itemprop="description" content="{{ site.description }}">
-	<meta itemprop="image" content="{% if page.image %}{{site.url}}{{page.image}}{% else %}{{site.url}}{{site.socialimg}}{% endif %}">
+  <!-- Google++ -->
+  <link rel="publisher" href="https://plus.google.com/{{ site.googleplus }}" />
+  <!-- <meta itemprop="name" content="{{ site.title }}"> -->
+  <meta itemprop="description" content="{{ site.description }}" />
+  <meta itemprop="image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.socialimg }}{% endif %}" />
 
-	<!-- Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}" />
-	<meta property="og:description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}" />
-	<meta property="og:image" content="{% if page.image %}{{site.url}}{{page.image}}{% else %}{{site.url}}{{site.socialimg}}{% endif %}" />
-	<meta property="og:url" content="{{site.url}}{{page.url}}" />
-	<meta property="og:site_name" content="{{ site.title }} " />
+  <!-- Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{% if page.fulltitle %}{{ page.fulltitle }}{% else %}{{ page.title }} | {{ site.title }} {% endif %}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.tagline }}{% endif %}" />
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}{{ site.socialimg }}{% endif %}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="{{ site.title }} " />
 
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}">
-	<meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
-	<meta name="twitter:image" content="{{site.url}}{{site.socialimg}}">
-	<meta name="twitter:url" content="{{site.url}}{{page.url}}">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{% if page.fulltitle %}{{ page.fulltitle }}{% else %}{{ page.title }} | {{ site.title }} {% endif %}" />
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.tagline }}{% endif %}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ site.socialimg }}" />
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
-	<!-- CSS & fonts -->
-	{% if jekyll.environment == 'production' %}
-	<link rel="stylesheet" href="{{site.url}}assets/css/styles.css">
-	{% else %}
-	<link rel="stylesheet" href="/assets/css/styles.css">
-	{% endif %}
-	<!-- Put your fonts here -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106151916-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+  <!-- CSS & fonts -->
+  {% if jekyll.environment %}
+  <link rel="stylesheet" href="{{ site.url }}assets/css/styles.css" />
+  <!-- {% else %}
+	<link rel="stylesheet" href="/assets/css/styles.css"> -->
+  {% endif %}
+  <!-- Put your fonts here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106151916-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-		gtag('config', 'UA-106151916-2');
-	</script>
+    gtag('config', 'UA-106151916-2');
+  </script>
 
-	{% seo %}
+  {% seo %}
 </head>
